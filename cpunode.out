@@ -1,0 +1,959 @@
+HOSTNAME=cn10402
+SHELL=/bin/bash
+TERM=xterm
+HISTSIZE=1000
+SSH_CLIENT=12.8.70.143 43345 22
+QTDIR=/usr/lib/qt-3.3
+QTINC=/usr/lib/qt-3.3/include
+SSH_TTY=/dev/pts/0
+USER=USER
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=:/opt/intel/mic/coi/host-linux-release/lib
+PATH=/usr/lib/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/bin:/WORK/USER/bin
+MAIL=/var/spool/mail/USER
+_=/bin/env
+SALLOC_EXCLUSIVE=1
+PWD=/WORK/USER
+SLURM_STEP_KILLED_MSG_NODE_ID=0
+NSS_YHPC_GROUP=AAAALzAtAhRa8gChCF8F5YVeA/8PQrXghRo2dQIVAJDZsb6Km9p43EiT+AFQC1eckBjBNjppY3RfenlsaXU6NTM3ODppY3RfenlsaXVfMTo1Mzc5OnRpYW5oZTJjX2RvY2tlcl8xMjg6ODE5MTp0aWFuaGUyY193b3JrOjgxOTM6dGlhbmhlMmdfZ3B1OjgxOTU6dGlhbmhlMmdfbWVtXzN0Yjo4MTk2
+LANG=en_US.UTF-8
+NSS_YHPC_PASSWD=AAAALzAtAhUAgFLwG/PI966NjZCnWpaOvQ5c9w0CFEdIVmJ0OX+p7mlX24YXUMVSmrRHaWN0X3p5bGl1XzE6eDo0NjMwOjUzNzg6aWN0X3p5bGl1XzE6L1dPUksvaWN0X3p5bGl1XzE6L2Jpbi9iYXNo
+KDE_IS_PRELINKED=1
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+KDEDIRS=/usr
+LOADEDMODULES=
+SBATCH_EXCLUSIVE=1
+SLURM_DISTRIBUTION=block:block
+HISTCONTROL=ignoredups
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SLURM_EXCLUSIVE=1
+HOME=/WORK/USER
+SHLVL=2
+LOGNAME=USER
+CVS_RSH=ssh
+QTLIB=/usr/lib/qt-3.3/lib
+SSH_CONNECTION=12.8.70.143 43345 12.7.66.130 22
+MODULESHOME=/usr/share/Modules
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+SLURM_CPU_BIND=none
+G_BROKEN_FILENAMES=1
+SLURM_SRUN_REDUCE_TASK_EXIT_MSG=1
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
++ lsb_release -a
+sc.sh: line 10: lsb_release: command not found
++ uname -a
+Linux cn10402 2.6.32-279-TH2 #91 SMP Thu Apr 23 00:50:30 CST 2015 x86_64 x86_64 x86_64 GNU/Linux
++ lscpu
+sc.sh: line 12: lscpu: command not found
++ cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 0
+cpu cores	: 12
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 1
+cpu cores	: 12
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 2
+cpu cores	: 12
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 3
+cpu cores	: 12
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 4
+cpu cores	: 12
+apicid		: 8
+initial apicid	: 8
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 5
+cpu cores	: 12
+apicid		: 10
+initial apicid	: 10
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 8
+cpu cores	: 12
+apicid		: 16
+initial apicid	: 16
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 9
+cpu cores	: 12
+apicid		: 18
+initial apicid	: 18
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 10
+cpu cores	: 12
+apicid		: 20
+initial apicid	: 20
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 9
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 11
+cpu cores	: 12
+apicid		: 22
+initial apicid	: 22
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 10
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 12
+cpu cores	: 12
+apicid		: 24
+initial apicid	: 24
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 11
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 12
+core id		: 13
+cpu cores	: 12
+apicid		: 26
+initial apicid	: 26
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4400.29
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 0
+cpu cores	: 12
+apicid		: 32
+initial apicid	: 32
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 1
+cpu cores	: 12
+apicid		: 34
+initial apicid	: 34
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 2
+cpu cores	: 12
+apicid		: 36
+initial apicid	: 36
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 3
+cpu cores	: 12
+apicid		: 38
+initial apicid	: 38
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 16
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 4
+cpu cores	: 12
+apicid		: 40
+initial apicid	: 40
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 17
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 5
+cpu cores	: 12
+apicid		: 42
+initial apicid	: 42
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 18
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 8
+cpu cores	: 12
+apicid		: 48
+initial apicid	: 48
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 19
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 9
+cpu cores	: 12
+apicid		: 50
+initial apicid	: 50
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 20
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 10
+cpu cores	: 12
+apicid		: 52
+initial apicid	: 52
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 21
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 11
+cpu cores	: 12
+apicid		: 54
+initial apicid	: 54
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 22
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 12
+cpu cores	: 12
+apicid		: 56
+initial apicid	: 56
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 23
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2692 v2 @ 2.20GHz
+stepping	: 4
+cpu MHz		: 1200.000
+cache size	: 30720 KB
+physical id	: 1
+siblings	: 12
+core id		: 13
+cpu cores	: 12
+apicid		: 58
+initial apicid	: 58
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 4399.38
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
++ cat /proc/meminfo
+MemTotal:       66085420 kB
+MemFree:        62642544 kB
+Buffers:               0 kB
+Cached:           931412 kB
+SwapCached:            0 kB
+Active:           203108 kB
+Inactive:         744472 kB
+Active(anon):     203064 kB
+Inactive(anon):   744428 kB
+Active(file):         44 kB
+Inactive(file):       44 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         16172 kB
+Mapped:             7176 kB
+Shmem:            931320 kB
+Slab:            1383304 kB
+SReclaimable:      17168 kB
+SUnreclaim:      1366136 kB
+KernelStack:        4728 kB
+PageTables:         1920 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    33042708 kB
+Committed_AS:    1040648 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      716664 kB
+VmallocChunk:   34323460100 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:        2048 kB
+DirectMap2M:     2086912 kB
+DirectMap1G:    65011712 kB
++ inxi -F -c0
+sc.sh: line 14: inxi: command not found
++ lsblk -a
+sc.sh: line 15: lsblk: command not found
++ lsscsi -s
+sc.sh: line 16: lsscsi: command not found
++ module list
+++ /usr/bin/modulecmd bash list
+sc.sh: /usr/bin/modulecmd: No such file or directory
++ eval
++ nvidia-smi
+sc.sh: line 18: nvidia-smi: command not found
++ lshw -short -quiet -sanitize
++ cat
+sc.sh: line 19: lshw: command not found
++ lspci
+00:00.0 Host bridge: Intel Corporation Xeon E5 v2/Core i7 DMI2 (rev 04)
+00:01.0 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 1a (rev 04)
+00:01.1 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 1b (rev 04)
+00:02.0 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 2a (rev 04)
+00:02.2 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 2c (rev 04)
+00:03.0 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 3a (rev 04)
+00:03.2 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 3c (rev 04)
+00:04.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 0 (rev 04)
+00:04.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 1 (rev 04)
+00:04.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 2 (rev 04)
+00:04.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 3 (rev 04)
+00:04.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 4 (rev 04)
+00:04.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 5 (rev 04)
+00:04.6 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 6 (rev 04)
+00:04.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 7 (rev 04)
+00:05.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 VTd/Memory Map/Misc (rev 04)
+00:05.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Memory Hotplug (rev 04)
+00:05.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO RAS (rev 04)
+00:05.4 PIC: Intel Corporation Xeon E5 v2/Core i7 IOAPIC (rev 04)
+00:05.6 Performance counters: Intel Corporation Device 0e39 (rev 04)
+00:06.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+00:06.1 System peripheral: Intel Corporation Device 0e11 (rev 04)
+00:06.2 System peripheral: Intel Corporation Device 0e12 (rev 04)
+00:06.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+00:06.4 System peripheral: Intel Corporation Device 0e14 (rev 04)
+00:06.5 System peripheral: Intel Corporation Device 0e15 (rev 04)
+00:06.6 System peripheral: Intel Corporation Device 0e16 (rev 04)
+00:06.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+00:07.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+00:07.1 System peripheral: Intel Corporation Device 0e19 (rev 04)
+00:07.2 System peripheral: Intel Corporation Device 0e1a (rev 04)
+00:07.3 System peripheral: Intel Corporation Device 0e1b (rev 04)
+00:07.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+00:11.0 PCI bridge: Intel Corporation C600/X79 series chipset PCI Express Virtual Root Port (rev 06)
+00:16.0 Communication controller: Intel Corporation C600/X79 series chipset MEI Controller #1 (rev 05)
+00:16.1 Communication controller: Intel Corporation C600/X79 series chipset MEI Controller #2 (rev 05)
+00:1a.0 USB controller: Intel Corporation C600/X79 series chipset USB2 Enhanced Host Controller #2 (rev 06)
+00:1c.0 PCI bridge: Intel Corporation C600/X79 series chipset PCI Express Root Port 1 (rev b6)
+00:1d.0 USB controller: Intel Corporation C600/X79 series chipset USB2 Enhanced Host Controller #1 (rev 06)
+00:1e.0 PCI bridge: Intel Corporation 82801 PCI Bridge (rev a6)
+00:1f.0 ISA bridge: Intel Corporation C600/X79 series chipset LPC Controller (rev 06)
+00:1f.2 SATA controller: Intel Corporation C600/X79 series chipset 6-Port SATA AHCI Controller (rev 06)
+00:1f.3 SMBus: Intel Corporation C600/X79 series chipset SMBus Host Controller (rev 06)
+05:00.0 I2O: FarSite Communications Ltd Device 6666 (rev 03)
+08:00.0 Ethernet controller: Intel Corporation 82576 Gigabit Network Connection (rev 01)
+08:00.1 Ethernet controller: Intel Corporation 82576 Gigabit Network Connection (rev 01)
+7f:08.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link 0 (rev 04)
+7f:08.2 Performance counters: Intel Corporation Xeon E5 v2/Core i7 QPI Link 0 (rev 04)
+7f:08.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link Reut 0 (rev 04)
+7f:08.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link Reut 0 (rev 04)
+7f:08.5 System peripheral: Intel Corporation Device 0e85 (rev 04)
+7f:08.6 System peripheral: Intel Corporation Device 0e86 (rev 04)
+7f:08.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Registers (rev 04)
+7f:09.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link 1 (rev 04)
+7f:09.2 Performance counters: Intel Corporation Xeon E5 v2/Core i7 QPI Link 1 (rev 04)
+7f:09.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link 1 (rev 04)
+7f:09.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link Reut 1 (rev 04)
+7f:09.5 System peripheral: Intel Corporation Device 0e95 (rev 04)
+7f:09.6 System peripheral: Intel Corporation Device 0e96 (rev 04)
+7f:0a.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 0 (rev 04)
+7f:0a.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 1 (rev 04)
+7f:0a.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 2 (rev 04)
+7f:0a.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 3 (rev 04)
+7f:0a.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 4 (rev 04)
+7f:0a.5 System peripheral: Intel Corporation Device 0ec5 (rev 04)
+7f:0a.6 System peripheral: Intel Corporation Device 0ec6 (rev 04)
+7f:0a.7 System peripheral: Intel Corporation Device 0ec7 (rev 04)
+7f:0b.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 UBOX Registers (rev 04)
+7f:0b.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 UBOX Registers (rev 04)
+7f:0b.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 UBOX Registers (rev 04)
+7f:0c.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0c.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0c.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0c.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0c.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0c.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0d.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0d.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0d.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0d.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0d.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0d.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+7f:0e.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Home Agent 0 (rev 04)
+7f:0e.1 Performance counters: Intel Corporation Xeon E5 v2/Core i7 Home Agent 0 (rev 04)
+7f:0e.2 System peripheral: Intel Corporation Device 0e70 (rev 04)
+7f:0f.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Target Address/Thermal Registers (rev 04)
+7f:0f.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 RAS Registers (rev 04)
+7f:0f.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers (rev 04)
+7f:0f.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers (rev 04)
+7f:0f.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers (rev 04)
+7f:0f.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers (rev 04)
+7f:10.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 0 (rev 04)
+7f:10.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 1 (rev 04)
+7f:10.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 0 (rev 04)
+7f:10.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 1 (rev 04)
+7f:10.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 2 (rev 04)
+7f:10.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 3 (rev 04)
+7f:10.6 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 2 (rev 04)
+7f:10.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 3 (rev 04)
+7f:11.0 System peripheral: Intel Corporation Device 0eb8 (rev 04)
+7f:11.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 DDRIO Registers (rev 04)
+7f:11.5 System peripheral: Intel Corporation Device 0ebd (rev 04)
+7f:11.6 System peripheral: Intel Corporation Xeon E5 v2/Core i7 DDRIO Registers (rev 04)
+7f:11.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 DDRIO Registers (rev 04)
+7f:13.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 R2PCIe (rev 04)
+7f:13.1 Performance counters: Intel Corporation Xeon E5 v2/Core i7 R2PCIe (rev 04)
+7f:13.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Ring Registers (rev 04)
+7f:13.5 Performance counters: Intel Corporation Xeon E5 v2/Core i7 QPI Ring Performance Ring Monitoring (rev 04)
+7f:13.6 Performance counters: Intel Corporation Xeon E5 v2/Core i7 QPI Ring Performance Ring Monitoring (rev 04)
+7f:16.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 System Address Decoder (rev 04)
+7f:16.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Broadcast Registers (rev 04)
+7f:16.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Broadcast Registers (rev 04)
+7f:1c.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Home Agent 1 (rev 04)
+7f:1c.1 Performance counters: Intel Corporation Xeon E5 v2/Core i7 Home Agent 1 (rev 04)
+7f:1c.2 System peripheral: Intel Corporation Device 0e78 (rev 04)
+7f:1d.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Target Address/Thermal Registers (rev 04)
+7f:1d.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 RAS Registers (rev 04)
+7f:1d.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder Registers (rev 04)
+7f:1d.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder Registers (rev 04)
+7f:1d.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder Registers (rev 04)
+7f:1d.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder Registers (rev 04)
+7f:1e.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 Thermal Control 0 (rev 04)
+7f:1e.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 Thermal Control 1 (rev 04)
+7f:1e.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 ERROR Registers 0 (rev 04)
+7f:1e.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 ERROR Registers 1 (rev 04)
+7f:1e.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 Thermal Control 2 (rev 04)
+7f:1e.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 Thermal Control 3 (rev 04)
+7f:1e.6 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 ERROR Registers 2 (rev 04)
+7f:1e.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 ERROR Registers 3 (rev 04)
+7f:1f.0 System peripheral: Intel Corporation Device 0e98 (rev 04)
+7f:1f.1 System peripheral: Intel Corporation Device 0e99 (rev 04)
+7f:1f.2 System peripheral: Intel Corporation Device 0e9a (rev 04)
+7f:1f.3 System peripheral: Intel Corporation Device 0e9b (rev 04)
+80:02.0 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 2a (rev 04)
+80:02.2 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 2c (rev 04)
+80:03.0 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 3a (rev 04)
+80:03.2 PCI bridge: Intel Corporation Xeon E5 v2/Core i7 PCI Express Root Port 3c (rev 04)
+80:04.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 0 (rev 04)
+80:04.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 1 (rev 04)
+80:04.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 2 (rev 04)
+80:04.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 3 (rev 04)
+80:04.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 4 (rev 04)
+80:04.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 5 (rev 04)
+80:04.6 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 6 (rev 04)
+80:04.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Crystal Beach DMA Channel 7 (rev 04)
+80:05.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 VTd/Memory Map/Misc (rev 04)
+80:05.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Memory Hotplug (rev 04)
+80:05.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO RAS (rev 04)
+80:05.4 PIC: Intel Corporation Xeon E5 v2/Core i7 IOAPIC (rev 04)
+80:05.6 Performance counters: Intel Corporation Device 0e39 (rev 04)
+80:06.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+80:06.1 System peripheral: Intel Corporation Device 0e11 (rev 04)
+80:06.2 System peripheral: Intel Corporation Device 0e12 (rev 04)
+80:06.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+80:06.4 System peripheral: Intel Corporation Device 0e14 (rev 04)
+80:06.5 System peripheral: Intel Corporation Device 0e15 (rev 04)
+80:06.6 System peripheral: Intel Corporation Device 0e16 (rev 04)
+80:06.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+80:07.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+80:07.1 System peripheral: Intel Corporation Device 0e19 (rev 04)
+80:07.2 System peripheral: Intel Corporation Device 0e1a (rev 04)
+80:07.3 System peripheral: Intel Corporation Device 0e1b (rev 04)
+80:07.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 IIO Configuration Registers (rev 04)
+ff:08.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link 0 (rev 04)
+ff:08.2 Performance counters: Intel Corporation Xeon E5 v2/Core i7 QPI Link 0 (rev 04)
+ff:08.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link Reut 0 (rev 04)
+ff:08.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link Reut 0 (rev 04)
+ff:08.5 System peripheral: Intel Corporation Device 0e85 (rev 04)
+ff:08.6 System peripheral: Intel Corporation Device 0e86 (rev 04)
+ff:08.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Registers (rev 04)
+ff:09.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link 1 (rev 04)
+ff:09.2 Performance counters: Intel Corporation Xeon E5 v2/Core i7 QPI Link 1 (rev 04)
+ff:09.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link 1 (rev 04)
+ff:09.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Link Reut 1 (rev 04)
+ff:09.5 System peripheral: Intel Corporation Device 0e95 (rev 04)
+ff:09.6 System peripheral: Intel Corporation Device 0e96 (rev 04)
+ff:0a.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 0 (rev 04)
+ff:0a.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 1 (rev 04)
+ff:0a.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 2 (rev 04)
+ff:0a.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 3 (rev 04)
+ff:0a.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Power Control Unit 4 (rev 04)
+ff:0a.5 System peripheral: Intel Corporation Device 0ec5 (rev 04)
+ff:0a.6 System peripheral: Intel Corporation Device 0ec6 (rev 04)
+ff:0a.7 System peripheral: Intel Corporation Device 0ec7 (rev 04)
+ff:0b.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 UBOX Registers (rev 04)
+ff:0b.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 UBOX Registers (rev 04)
+ff:0b.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 UBOX Registers (rev 04)
+ff:0c.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0c.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0c.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0c.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0c.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0c.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0d.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0d.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0d.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0d.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0d.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0d.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Unicast Registers (rev 04)
+ff:0e.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Home Agent 0 (rev 04)
+ff:0e.1 Performance counters: Intel Corporation Xeon E5 v2/Core i7 Home Agent 0 (rev 04)
+ff:0e.2 System peripheral: Intel Corporation Device 0e70 (rev 04)
+ff:0f.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Target Address/Thermal Registers (rev 04)
+ff:0f.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 RAS Registers (rev 04)
+ff:0f.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers (rev 04)
+ff:0f.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers (rev 04)
+ff:0f.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers (rev 04)
+ff:0f.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel Target Address Decoder Registers (rev 04)
+ff:10.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 0 (rev 04)
+ff:10.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 1 (rev 04)
+ff:10.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 0 (rev 04)
+ff:10.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 1 (rev 04)
+ff:10.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 2 (rev 04)
+ff:10.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 Thermal Control 3 (rev 04)
+ff:10.6 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 2 (rev 04)
+ff:10.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel 0-3 ERROR Registers 3 (rev 04)
+ff:11.0 System peripheral: Intel Corporation Device 0eb8 (rev 04)
+ff:11.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 DDRIO Registers (rev 04)
+ff:11.5 System peripheral: Intel Corporation Device 0ebd (rev 04)
+ff:11.6 System peripheral: Intel Corporation Xeon E5 v2/Core i7 DDRIO Registers (rev 04)
+ff:11.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 DDRIO Registers (rev 04)
+ff:13.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 R2PCIe (rev 04)
+ff:13.1 Performance counters: Intel Corporation Xeon E5 v2/Core i7 R2PCIe (rev 04)
+ff:13.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 QPI Ring Registers (rev 04)
+ff:13.5 Performance counters: Intel Corporation Xeon E5 v2/Core i7 QPI Ring Performance Ring Monitoring (rev 04)
+ff:13.6 Performance counters: Intel Corporation Xeon E5 v2/Core i7 QPI Ring Performance Ring Monitoring (rev 04)
+ff:16.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 System Address Decoder (rev 04)
+ff:16.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Broadcast Registers (rev 04)
+ff:16.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Broadcast Registers (rev 04)
+ff:1c.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Home Agent 1 (rev 04)
+ff:1c.1 Performance counters: Intel Corporation Xeon E5 v2/Core i7 Home Agent 1 (rev 04)
+ff:1c.2 System peripheral: Intel Corporation Device 0e78 (rev 04)
+ff:1d.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Target Address/Thermal Registers (rev 04)
+ff:1d.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 RAS Registers (rev 04)
+ff:1d.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder Registers (rev 04)
+ff:1d.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder Registers (rev 04)
+ff:1d.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder Registers (rev 04)
+ff:1d.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 1 Channel Target Address Decoder Registers (rev 04)
+ff:1e.0 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 Thermal Control 0 (rev 04)
+ff:1e.1 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 Thermal Control 1 (rev 04)
+ff:1e.2 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 ERROR Registers 0 (rev 04)
+ff:1e.3 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 ERROR Registers 1 (rev 04)
+ff:1e.4 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 Thermal Control 2 (rev 04)
+ff:1e.5 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 Thermal Control 3 (rev 04)
+ff:1e.6 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 ERROR Registers 2 (rev 04)
+ff:1e.7 System peripheral: Intel Corporation Xeon E5 v2/Core i7 Integrated Memory Controller 0 Channel 0-3 ERROR Registers 3 (rev 04)
+ff:1f.0 System peripheral: Intel Corporation Device 0e98 (rev 04)
+ff:1f.1 System peripheral: Intel Corporation Device 0e99 (rev 04)
+ff:1f.2 System peripheral: Intel Corporation Device 0e9a (rev 04)
+ff:1f.3 System peripheral: Intel Corporation Device 0e9b (rev 04)
